@@ -1,0 +1,85 @@
+<!-- template.component.html -->
+<app-sidenav></app-sidenav>
+
+<div class="title">Template</div>
+
+<div class="template-container">
+  <form (ngSubmit)="generateTemplate()">
+    <div class="form-row">
+      <div class="input-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="formData.firstName" required>
+      </div>
+      <div class="input-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-group">
+        <label for="userID">UserID:</label>
+        <input type="text" id="userID" name="userID" [(ngModel)]="formData.userID" required>
+      </div>
+      <div class="input-group">
+        <label for="system">System:</label>
+        <input type="text" id="system" name="system" [(ngModel)]="formData.system">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-group">
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" [(ngModel)]="formData.role">
+      </div>
+      <div class="input-group">
+        <label for="roleApprover">Role Approver:</label>
+        <input type="text" id="roleApprover" name="roleApprover" [(ngModel)]="formData.roleApprover">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="input-group">
+        <label for="lineManager">Line Manager:</label>
+        <input type="text" id="lineManager" name="lineManager" [(ngModel)]="formData.lineManager">
+      </div>
+      <div class="input-group">
+        <label for="companyCode">Company Code:</label>
+        <input type="text" id="companyCode" name="companyCode" [(ngModel)]="formData.companyCode">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="input-group">
+        <label for="referenceuser">Reference User:</label>
+        <input type="text" id="referenceuser" name="referenceuser" [(ngModel)]="formData.referenceuser">
+      </div>
+      <div class="input-group">
+        <label for="emailTemplate">Email Template:</label>
+        <select id="emailTemplate" name="emailTemplate" [(ngModel)]="formData.emailTemplate">
+            <option value="template1">MHPS Closing Templated</option>
+            <option value="template2">RENEW- User Reactivation Closing Template</option>
+            <option value="template3">Cross Company code approver</option>
+            <option value="template4">Local QM Process owner approver</option>
+            <option value="template5">One above line manager</option>
+            <option value="template6">Role Owner approver</option>
+            <option value="template7">SOD Risk Approver</option>
+          </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <button class="generate-button" type="submit" (click)="generateTemplate()">Generate</button>
+    </div>
+  </form>
+</div>
+
+
+<div class="title">Generated Email Template</div>
+
+
+<div class="generated-template">
+<!-- Display the generated template here -->
+<textarea [(ngModel)]="generatedTemplate" readonly></textarea>
+</div>
+
+<button class="copy-template" type="button" (click)="copyTemplate()">Copy</button>
+
+
+

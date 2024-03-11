@@ -1,0 +1,168 @@
+.title {
+  /* Your existing styles */
+  left: 12418px;
+  top: -1930px;
+  width: 195px;
+  height: 28px;
+  transform: scale(1.82655);
+  margin-left: 360px;
+  margin-top: 50px;
+  font-family: 'Google Font Name', sans-serif; 
+  display: flex;
+}
+
+.template-container {
+  /* Your existing styles */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+  align-self: stretch;
+  width: 1123px;
+  height: 495px;
+  opacity: 1;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2px;
+  box-shadow: rgba(3, 3, 3, 0.1) 2px 0px 10px;
+  border: 0px;
+  margin-left: 280px;
+  margin-top: 30px;
+}
+
+/* .generated-template {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+    width: 1123px;
+    height: 300px;
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: rgba(3, 3, 3, 0.1) 2px 0px 10px;
+    border: 0px;
+    margin-left: 280px;
+    margin-top: 30px;
+} */
+
+
+
+
+.form-row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    /* margin-bottom: 10px; */
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 5px;
+    width: 296px;
+  }
+  
+  .input-group label {
+
+    margin-bottom: 5px;
+    visibility: visible;
+    font-family: Roboto;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: calc(100% - 10px); /* Take up full width minus margin */
+    padding: 5px;
+    margin-right: 10px; /* Add margin between input and label */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px; /* Add margin between form and button */
+  }
+  
+  .generate-button{
+    width: 500px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .generate-button:hover {
+    background-color: #2d2f2f;
+
+  }
+
+  .copy-template {
+    margin-top: 20px;
+    margin-left: 280px;
+    width: 130px;
+    height: 40px;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Define animation keyframes */
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.copy-template:hover {
+  background-color: #2d2c2c;
+}
+
+/* Apply animation on click */
+.clicked {
+  animation: clickAnimation 0.3s ease;
+}
+
+
+  textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+    width: 1123px;
+    height: 300px;
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    box-shadow: rgba(3, 3, 3, 0.1) 2px 0px 10px;
+    border: 0px;
+    margin-left: 280px;
+    margin-top: 30px;
+  }
+
+

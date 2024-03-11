@@ -1,0 +1,26 @@
+<div class="sidenav" [ngClass]="{ 'scroll-left': isMouseOver }">
+    <img src="assets/icons/email.png" alt="enail-icon" class="email-icon"> <h2 class="logo">Formulator</h2>
+    <div class="nav-menu-frame">
+    <div class="nav-item" (click)="navigateTo('template')">
+        <img src="assets/icons/template.png" alt="Template Icon" class="nav-icon">
+      <span>Template</span>
+    </div>
+    <div class="nav-item" (click)="navigateTo('template-history')">
+        <img src="assets/icons/history.png" alt="Template Icon" class="nav-icon">
+      <span>Template History</span>
+    </div>
+    <div class="nav-item" (click)="navigateTo('share-template')">
+        <img src="assets/icons/email.png" alt="Template Icon" class="nav-icon">
+      <span>Share Template</span>
+    </div>
+    <div class="nav-item" (click)="navigateTo('about')">
+        <img src="assets/icons/information-button.png" alt="Template Icon" class="nav-icon">
+      <span>About</span>
+    </div>
+    <div class="nav-item" (click)="navigateTo('how-to-use')">
+        <img src="assets/icons/user-guide.png" alt="Template Icon" class="nav-icon">
+      <span>How to Use?</span>
+    </div>
+    </div>
+  </div>
+  

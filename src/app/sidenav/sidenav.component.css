@@ -1,0 +1,59 @@
+.sidenav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #fff; 
+    color: #000; 
+    overflow-x: hidden;
+    transition: left 0.3s;
+    padding-top: 30px; 
+    margin-left: 5px;
+    box-shadow: rgba(3, 3, 3, 0.1) 2px 0px 10px;
+  }
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 92px;
+  margin-top: -43px;
+  font-family: 'Google Font Name', sans-serif; 
+  display: flex;
+}
+  
+
+  .email-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px; 
+    margin-top: 15px; 
+  }
+  
+
+.nav-icon {
+    width: 15px;
+    height: 15px;
+  }
+  
+
+  .nav-menu-frame{
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+  
+  .nav-item {
+    padding: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: 'Google Font Name', sans-serif; 
+
+  }
+  
+  .nav-item span {
+    font-size: 16px; /* Set font size */
+    font-weight: normal; /* Optionally adjust font weight */
+    margin-left: 10px; /* Adjust margin as needed */
+  }
+  
